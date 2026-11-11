@@ -1,0 +1,348 @@
+{
+  "risk_aversion_for_baselines": 30.0,
+  "shots": 1024,
+  "hardness_dial": [
+    {
+      "n": 8,
+      "risk_aversion": 1.0,
+      "instances": 100,
+      "sorting_finds_optimum": 0.94,
+      "top_return_finds_optimum": 0.77,
+      "interaction_share_of_variance": {
+        "median": 0.0013701819060621067,
+        "lo": 0.0010672461619903554,
+        "hi": 0.001517846188261924,
+        "n": 100
+      }
+    },
+    {
+      "n": 8,
+      "risk_aversion": 3.0,
+      "instances": 100,
+      "sorting_finds_optimum": 0.79,
+      "top_return_finds_optimum": 0.37,
+      "interaction_share_of_variance": {
+        "median": 0.014907512673280304,
+        "lo": 0.010524269093617589,
+        "hi": 0.020166284408969358,
+        "n": 100
+      }
+    },
+    {
+      "n": 8,
+      "risk_aversion": 10.0,
+      "instances": 100,
+      "sorting_finds_optimum": 0.58,
+      "top_return_finds_optimum": 0.08,
+      "interaction_share_of_variance": {
+        "median": 0.06960233295318483,
+        "lo": 0.05923388563556598,
+        "hi": 0.08455145167025001,
+        "n": 100
+      }
+    },
+    {
+      "n": 8,
+      "risk_aversion": 30.0,
+      "instances": 100,
+      "sorting_finds_optimum": 0.36,
+      "top_return_finds_optimum": 0.0,
+      "interaction_share_of_variance": {
+        "median": 0.09685675987272313,
+        "lo": 0.08894096029425842,
+        "hi": 0.10354313296262034,
+        "n": 100
+      }
+    },
+    {
+      "n": 8,
+      "risk_aversion": 100.0,
+      "instances": 100,
+      "sorting_finds_optimum": 0.35,
+      "top_return_finds_optimum": 0.0,
+      "interaction_share_of_variance": {
+        "median": 0.09298069530912234,
+        "lo": 0.08167166081896492,
+        "hi": 0.10181835512856147,
+        "n": 100
+      }
+    },
+    {
+      "n": 12,
+      "risk_aversion": 1.0,
+      "instances": 100,
+      "sorting_finds_optimum": 0.87,
+      "top_return_finds_optimum": 0.66,
+      "interaction_share_of_variance": {
+        "median": 0.0009577729370473858,
+        "lo": 0.0008289049312280127,
+        "hi": 0.0012213838160173012,
+        "n": 100
+      }
+    },
+    {
+      "n": 12,
+      "risk_aversion": 3.0,
+      "instances": 100,
+      "sorting_finds_optimum": 0.73,
+      "top_return_finds_optimum": 0.24,
+      "interaction_share_of_variance": {
+        "median": 0.009884769681396245,
+        "lo": 0.008314585032345577,
+        "hi": 0.010819665803256821,
+        "n": 100
+      }
+    },
+    {
+      "n": 12,
+      "risk_aversion": 10.0,
+      "instances": 100,
+      "sorting_finds_optimum": 0.25,
+      "top_return_finds_optimum": 0.03,
+      "interaction_share_of_variance": {
+        "median": 0.05935512583457597,
+        "lo": 0.05282424100331472,
+        "hi": 0.06325515653557492,
+        "n": 100
+      }
+    },
+    {
+      "n": 12,
+      "risk_aversion": 30.0,
+      "instances": 100,
+      "sorting_finds_optimum": 0.08,
+      "top_return_finds_optimum": 0.0,
+      "interaction_share_of_variance": {
+        "median": 0.0920093076486806,
+        "lo": 0.08223291005221284,
+        "hi": 0.10198249456221935,
+        "n": 100
+      }
+    },
+    {
+      "n": 12,
+      "risk_aversion": 100.0,
+      "instances": 100,
+      "sorting_finds_optimum": 0.08,
+      "top_return_finds_optimum": 0.0,
+      "interaction_share_of_variance": {
+        "median": 0.07773472840368191,
+        "lo": 0.07057472827083977,
+        "hi": 0.08409930764156731,
+        "n": 100
+      }
+    }
+  ],
+  "baselines": [
+    {
+      "n": 8,
+      "method": "top_return",
+      "instances": 40,
+      "n_feasible": 70,
+      "finds_optimum": 0.05,
+      "mean_gap": 0.5254880626818551,
+      "worst_gap": 1.0,
+      "median_cost_evaluations": 0.0
+    },
+    {
+      "n": 8,
+      "method": "markowitz_rounding",
+      "instances": 40,
+      "n_feasible": 70,
+      "finds_optimum": 0.575,
+      "mean_gap": 0.05581386576837288,
+      "worst_gap": 0.40145915151194406,
+      "median_cost_evaluations": 84.5
+    },
+    {
+      "n": 8,
+      "method": "field_ranking",
+      "instances": 40,
+      "n_feasible": 70,
+      "finds_optimum": 0.3,
+      "mean_gap": 0.05425253518000954,
+      "worst_gap": 0.19187102270600487,
+      "median_cost_evaluations": 0.0
+    },
+    {
+      "n": 8,
+      "method": "field_ranking_plus_search",
+      "instances": 40,
+      "n_feasible": 70,
+      "finds_optimum": 1.0,
+      "mean_gap": 3.640692646264856e-17,
+      "worst_gap": 2.640531986607184e-16,
+      "median_cost_evaluations": 33.0
+    },
+    {
+      "n": 8,
+      "method": "simulated_annealing",
+      "instances": 40,
+      "n_feasible": 70,
+      "finds_optimum": 1.0,
+      "mean_gap": 3.640692646264856e-17,
+      "worst_gap": 2.640531986607184e-16,
+      "median_cost_evaluations": 401.0
+    },
+    {
+      "n": 8,
+      "method": "random_feasible_1024",
+      "instances": 40,
+      "n_feasible": 70,
+      "finds_optimum": 1.0,
+      "mean_gap": 3.640692646264856e-17,
+      "worst_gap": 2.640531986607184e-16,
+      "median_cost_evaluations": 1024.0
+    },
+    {
+      "n": 8,
+      "method": "qaoa_ppo_1024",
+      "instances": 40,
+      "n_feasible": 70,
+      "finds_optimum": 1.0,
+      "mean_gap": 3.640692646264856e-17,
+      "worst_gap": 2.640531986607184e-16,
+      "median_cost_evaluations": 1024.0
+    },
+    {
+      "n": 12,
+      "method": "top_return",
+      "instances": 40,
+      "n_feasible": 924,
+      "finds_optimum": 0.0,
+      "mean_gap": 0.5485674963429685,
+      "worst_gap": 0.9999999999999997,
+      "median_cost_evaluations": 0.0
+    },
+    {
+      "n": 12,
+      "method": "markowitz_rounding",
+      "instances": 40,
+      "n_feasible": 924,
+      "finds_optimum": 0.3,
+      "mean_gap": 0.09858233113292174,
+      "worst_gap": 0.31047760485692777,
+      "median_cost_evaluations": 123.5
+    },
+    {
+      "n": 12,
+      "method": "field_ranking",
+      "instances": 40,
+      "n_feasible": 924,
+      "finds_optimum": 0.05,
+      "mean_gap": 0.07628962347295218,
+      "worst_gap": 0.19253935730560312,
+      "median_cost_evaluations": 0.0
+    },
+    {
+      "n": 12,
+      "method": "field_ranking_plus_search",
+      "instances": 40,
+      "n_feasible": 924,
+      "finds_optimum": 0.975,
+      "mean_gap": 0.00013110893703768627,
+      "worst_gap": 0.005244357481505467,
+      "median_cost_evaluations": 73.0
+    },
+    {
+      "n": 12,
+      "method": "simulated_annealing",
+      "instances": 40,
+      "n_feasible": 924,
+      "finds_optimum": 0.975,
+      "mean_gap": 5.217317435027907e-05,
+      "worst_gap": 0.002086926974008974,
+      "median_cost_evaluations": 401.0
+    },
+    {
+      "n": 12,
+      "method": "random_feasible_1024",
+      "instances": 40,
+      "n_feasible": 924,
+      "finds_optimum": 0.6,
+      "mean_gap": 0.0070086396374068214,
+      "worst_gap": 0.041301711164813126,
+      "median_cost_evaluations": 1024.0
+    },
+    {
+      "n": 12,
+      "method": "qaoa_ppo_1024",
+      "instances": 40,
+      "n_feasible": 924,
+      "finds_optimum": 0.85,
+      "mean_gap": 0.0022743271768779624,
+      "worst_gap": 0.041301711164813126,
+      "median_cost_evaluations": 1024.0
+    },
+    {
+      "n": 16,
+      "method": "top_return",
+      "instances": 40,
+      "n_feasible": 12870,
+      "finds_optimum": 0.0,
+      "mean_gap": 0.4868512222905143,
+      "worst_gap": 0.7966128603429271,
+      "median_cost_evaluations": 0.0
+    },
+    {
+      "n": 16,
+      "method": "markowitz_rounding",
+      "instances": 40,
+      "n_feasible": 12870,
+      "finds_optimum": 0.0,
+      "mean_gap": 0.10983317952273905,
+      "worst_gap": 0.30293259616594376,
+      "median_cost_evaluations": 173.5
+    },
+    {
+      "n": 16,
+      "method": "field_ranking",
+      "instances": 40,
+      "n_feasible": 12870,
+      "finds_optimum": 0.0,
+      "mean_gap": 0.09061587409614336,
+      "worst_gap": 0.24501628320629587,
+      "median_cost_evaluations": 0.0
+    },
+    {
+      "n": 16,
+      "method": "field_ranking_plus_search",
+      "instances": 40,
+      "n_feasible": 12870,
+      "finds_optimum": 0.975,
+      "mean_gap": 0.00037049524243373437,
+      "worst_gap": 0.014819809697347804,
+      "median_cost_evaluations": 193.0
+    },
+    {
+      "n": 16,
+      "method": "simulated_annealing",
+      "instances": 40,
+      "n_feasible": 12870,
+      "finds_optimum": 0.95,
+      "mean_gap": 0.001750254223893776,
+      "worst_gap": 0.0606165096952737,
+      "median_cost_evaluations": 401.0
+    },
+    {
+      "n": 16,
+      "method": "random_feasible_1024",
+      "instances": 40,
+      "n_feasible": 12870,
+      "finds_optimum": 0.1,
+      "mean_gap": 0.025118812058260664,
+      "worst_gap": 0.07103999988025969,
+      "median_cost_evaluations": 1024.0
+    },
+    {
+      "n": 16,
+      "method": "qaoa_ppo_1024",
+      "instances": 40,
+      "n_feasible": 12870,
+      "finds_optimum": 0.525,
+      "mean_gap": 0.006536193981000443,
+      "worst_gap": 0.034199925123849825,
+      "median_cost_evaluations": 1024.0
+    }
+  ]
+}

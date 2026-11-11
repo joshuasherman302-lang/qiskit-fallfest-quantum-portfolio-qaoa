@@ -1,0 +1,81 @@
+{
+  "tickers": [
+    "AAPL",
+    "JPM",
+    "XOM",
+    "JNJ"
+  ],
+  "budget": 2,
+  "risk_aversion": 3.0,
+  "lambda": 2.0,
+  "window": "2024-01-01..2025-12-31",
+  "verify_corrected": {
+    "max_abs_error": 1.2490009027033011e-15,
+    "operator_matches_coefficients": true,
+    "states_checked": 16,
+    "feasible_argmin_preserved": null
+  },
+  "verify_defective": {
+    "max_abs_error": 8.050219755798057,
+    "operator_matches_coefficients": true,
+    "states_checked": 16,
+    "feasible_argmin_preserved": null
+  },
+  "verify_gauged": {
+    "max_abs_error": 2.7755575615628914e-17,
+    "operator_matches_coefficients": true,
+    "states_checked": 6,
+    "feasible_argmin_preserved": true
+  },
+  "feasible_table": [
+    {
+      "portfolio": "JPM+JNJ",
+      "bitstring": "1010",
+      "true_cost": -0.17506563277438633,
+      "corrected_H": -0.1750656327743867,
+      "defective_H": -8.179411093425237
+    },
+    {
+      "portfolio": "AAPL+JPM",
+      "bitstring": "0011",
+      "true_cost": -0.13704220682959897,
+      "corrected_H": -0.13704220682959933,
+      "defective_H": -8.152764918703447
+    },
+    {
+      "portfolio": "JPM+XOM",
+      "bitstring": "0110",
+      "true_cost": -0.1255093978342446,
+      "corrected_H": -0.1255093978342452,
+      "defective_H": -8.138548922429692
+    },
+    {
+      "portfolio": "AAPL+JNJ",
+      "bitstring": "1001",
+      "true_cost": -0.09608829599666172,
+      "corrected_H": -0.09608829599666047,
+      "defective_H": -8.097721737423784
+    },
+    {
+      "portfolio": "XOM+JNJ",
+      "bitstring": "1100",
+      "true_cost": -0.07279437617903914,
+      "corrected_H": -0.0727943761790395,
+      "defective_H": -8.077625185738894
+    },
+    {
+      "portfolio": "AAPL+XOM",
+      "bitstring": "0101",
+      "true_cost": -0.045891456418086354,
+      "corrected_H": -0.04589145641808745,
+      "defective_H": -8.056539264109023
+    }
+  ],
+  "feasible_cost_spread": 0.12917417635629996,
+  "penalty_gap": 1.9926691789258824,
+  "penalty_gap_over_spread": 15.426219350758785,
+  "max_abs_coupling_penalised": 1.007861355936924,
+  "max_abs_coupling_gauged": 0.0009534007085876149,
+  "max_abs_field_gauged": 0.027855388605555337,
+  "defective_ranks_feasible_correctly": true
+}
